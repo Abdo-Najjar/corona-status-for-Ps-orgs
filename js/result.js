@@ -5,7 +5,7 @@ const join_statusUI = document.querySelector('#join_status');
 const corona_stausUI = document.querySelector('#corona_staus');
 const diagnostic_dateUI = document.querySelector('#diagnostic_date');
 const logoutUI = document.querySelector('#logout');
-
+const person_idTableUI = document.querySelector('#person_id_table');
 
 // logout/
 logoutUI.addEventListener('click', function () {
@@ -58,6 +58,7 @@ form.addEventListener('submit', function (event) {
             corona_stausUI.textContent = response.data.crona_status;
 
             diagnostic_dateUI.textContent = response.data.diagnostic_date;
+            person_idTableUI.textContent =person_idUI.value;
         }
     });
 
