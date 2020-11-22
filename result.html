@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,
+      user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>basic</title>
+  <link rel="stylesheet" href="css/bootstrap-rtl.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="card form-holder">
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="أدخل رقم الهوية" id="person_id">
+                <input type="submit" value="إبحث" class="btn btn-primary mt-3">
+                <input type="button" value="تسجيل خروج" class="btn btn-danger mt-3 mr-3" id="logout">
+              </div>
+            </form>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">الصفة</th>
+                <th scope="col">حالة الفحص</th>
+                <th scope="col">وقت الفصح</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="join_status"></td>
+                <td id="corona_staus"></td>
+                <td id="diagnostic_date"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
+    integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
+    crossorigin="anonymous"></script>
+  <script src="./js/result.js"></script>
+</body>
+
+</html>
